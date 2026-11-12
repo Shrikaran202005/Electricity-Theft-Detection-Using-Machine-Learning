@@ -1,0 +1,61 @@
+{
+  "best_model": "Logistic Regression",
+  "threshold": 0.6799999999999999,
+  "candidates": {
+    "Logistic Regression": {
+      "cv_roc_auc": 0.970620557426113,
+      "cv_pr_auc": 0.9176967102729413
+    },
+    "Random Forest": {
+      "cv_roc_auc": 0.9460344182566405,
+      "cv_pr_auc": 0.9013104559455183
+    },
+    "Gradient Boosting": {
+      "cv_roc_auc": 0.9442690796857462,
+      "cv_pr_auc": 0.9041273975333853
+    }
+  },
+  "test": {
+    "roc_auc": 0.9704335016835017,
+    "pr_auc": 0.9091602625135722,
+    "precision": 0.9666666666666667,
+    "recall": 0.8055555555555556,
+    "f1": 0.8787878787878788,
+    "confusion_matrix": [
+      [
+        263,
+        1
+      ],
+      [
+        7,
+        29
+      ]
+    ],
+    "n_test": 300
+  },
+  "n_customers": 1200,
+  "n_features": 20,
+  "theft_rate": 0.12,
+  "feature_importance": {
+    "mean_kwh": 0.7443641502696312,
+    "std_kwh": 0.13896149191361382,
+    "cv": 0.7827318174970983,
+    "median_kwh": 0.6479313633605275,
+    "min_kwh": 0.3145200443248723,
+    "max_kwh": 0.05863433988153036,
+    "skew": 0.22040305803504143,
+    "kurtosis": 0.35627675506327794,
+    "h2_over_h1": 0.9408943293405642,
+    "q4_over_q1": 0.513361526789636,
+    "trend_slope": 0.3798169890744716,
+    "monthly_cv": 0.7792686434446929,
+    "seasonal_r2": 0.9454344772179799,
+    "low_day_frac": 0.4062081495551364,
+    "zero_day_frac": 0.023099738618846816,
+    "longest_low_run": 0.4259505545747172,
+    "mean_abs_diff": 0.6658029782167747,
+    "mean_median_gap": 0.14838520908413497,
+    "mean_vs_peer": 0.7443641502696281,
+    "cv_vs_peer": 0.7827318174970996
+  }
+}

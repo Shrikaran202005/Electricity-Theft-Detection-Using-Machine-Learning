@@ -1,0 +1,128 @@
+{
+  "dataset": {
+    "customers": 5000,
+    "days": 180,
+    "theft_rate": 0.08,
+    "test_size": 1000,
+    "source": "synthetic (generate_data.py)"
+  },
+  "classification": {
+    "Random Forest": {
+      "accuracy": 0.978,
+      "precision": 0.8625,
+      "recall": 0.8625,
+      "f1": 0.8625,
+      "auc_roc": 0.9668274456521739,
+      "confusion_matrix": [
+        [
+          909,
+          11
+        ],
+        [
+          11,
+          69
+        ]
+      ]
+    },
+    "XGBoost Classifier": {
+      "accuracy": 0.969,
+      "precision": 0.7752808988764045,
+      "recall": 0.8625,
+      "f1": 0.8165680473372781,
+      "auc_roc": 0.977758152173913,
+      "confusion_matrix": [
+        [
+          900,
+          20
+        ],
+        [
+          11,
+          69
+        ]
+      ]
+    }
+  },
+  "anomaly_detection": {
+    "Isolation Forest": {
+      "precision": 0.8607594936708861,
+      "recall": 0.85,
+      "f1": 0.8553459119496856,
+      "precision_at_top10pct": 0.7
+    },
+    "One-Class SVM": {
+      "precision": 0.8181818181818182,
+      "recall": 0.7875,
+      "f1": 0.802547770700637
+    }
+  },
+  "feature_importance_pct": {
+    "cv": 51.13283395767212,
+    "consumption_drop_ratio": 21.29027396440506,
+    "avg_daily_kwh": 10.926403850317001,
+    "max_kwh_spike": 8.456145226955414,
+    "std_daily_kwh": 8.194337785243988,
+    "zero_reading_days": 0.0
+  },
+  "stats_summary": {
+    "avg_daily_kwh": {
+      "count": 5000.0,
+      "mean": 13.999,
+      "std": 6.083,
+      "min": 1.085,
+      "25%": 8.798,
+      "50%": 13.848,
+      "75%": 19.167,
+      "max": 25.338
+    },
+    "std_daily_kwh": {
+      "count": 5000.0,
+      "mean": 3.527,
+      "std": 1.631,
+      "min": 0.256,
+      "25%": 2.191,
+      "50%": 3.455,
+      "75%": 4.757,
+      "max": 13.048
+    },
+    "max_kwh_spike": {
+      "count": 5000.0,
+      "mean": 22.811,
+      "std": 9.858,
+      "min": 1.669,
+      "25%": 14.377,
+      "50%": 22.672,
+      "75%": 31.022,
+      "max": 44.995
+    },
+    "zero_reading_days": {
+      "count": 5000.0,
+      "mean": 0.953,
+      "std": 6.82,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 0.0,
+      "max": 87.0
+    },
+    "consumption_drop_ratio": {
+      "count": 5000.0,
+      "mean": 1.36,
+      "std": 0.107,
+      "min": 0.44,
+      "25%": 1.344,
+      "50%": 1.364,
+      "75%": 1.384,
+      "max": 2.123
+    },
+    "cv": {
+      "count": 5000.0,
+      "mean": 0.256,
+      "std": 0.074,
+      "min": 0.123,
+      "25%": 0.237,
+      "50%": 0.242,
+      "75%": 0.247,
+      "max": 1.006
+    }
+  }
+}
